@@ -62,13 +62,15 @@ for (var i = 0; i < rest.length; i++) {
 		};
 	})(i);
 }
-K();
 
 
 function J () {
 	J = function () {
 		console.log("J");
 	};
+	setTimeout(() => {
+		K();
+	});
 };
 
 function C () {
